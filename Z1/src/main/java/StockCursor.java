@@ -69,7 +69,8 @@ public class StockCursor extends AbstractCursor<StockEntry> {
             log("Error by closing File");
         }
     }
-
+    /*
+    //test
     public static void main(String[] arg) {
         System.out.println("Testing ...");
         StockCursor stockCursor = new StockCursor("Testdata.bin");
@@ -78,7 +79,7 @@ public class StockCursor extends AbstractCursor<StockEntry> {
         }
         stockCursor.close();
     }
-
+    */
     private void log(Object o) {
         System.out.println(o);
     }
