@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xxl-master">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/xxl_master_jar/xxl-master.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
