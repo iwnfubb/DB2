@@ -76,8 +76,8 @@ public class StockCursor extends AbstractCursor<StockEntry> {
         while ( stockCursor.hasNextObject()){
             System.out.println(stockCursor.nextObject());
         }
+        stockCursor.close();
     }
-
 
     private void log(Object o) {
         System.out.println(o);
