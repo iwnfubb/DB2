@@ -5,7 +5,7 @@ import xxl.core.cursors.filters.Filter;
 import java.util.Iterator;
 
 /**
- * Created by qwert on 31/10/2016.
+ * Created by OutOffCoffeeException on 31/10/2016.
  */
 public class Main2 {
     public static void main(String[] args) {

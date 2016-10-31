@@ -1,7 +1,7 @@
 import xxl.core.predicates.AbstractPredicate;
 
 /**
- * Created by qwert on 31/10/2016.
+ * Created by OutOffCoffeeException on 31/10/2016.
  */
 public class StockFilterPredicate extends AbstractPredicate<StockEntry> {
     @Override

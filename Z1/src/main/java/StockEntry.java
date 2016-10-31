@@ -1,5 +1,5 @@
 /**
- * Created by qwert on 30/10/2016.
+ * Created by OutOffCoffeeException on 30/10/2016.
  */
 public class StockEntry {
     private int id;

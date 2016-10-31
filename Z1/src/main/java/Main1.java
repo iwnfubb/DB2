@@ -4,7 +4,7 @@ import xxl.core.collections.containers.io.ConverterContainer;
 import java.util.Iterator;
 
 /**
- * Created by qwert on 30/10/2016.
+ * Created by OutOffCoffeeException on 30/10/2016.
  */
 public class Main1 {
     public static void main(String[] args) {
