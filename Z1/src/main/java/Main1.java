@@ -15,7 +15,7 @@ public class Main1 {
         ConverterContainer converterContainer = new ConverterContainer(blockFileContainer, stockConverter);
         StockFilterPredicate stockFilterPredicate = new StockFilterPredicate();
         log("Read file: " + file_name);
-
+        //write data to blockfilecontainer
         while (stockCursor.hasNextObject()) {
             StockEntry currentEntry = stockCursor.nextObject();
             if (currentEntry.getKurswert() > 50){
@@ -23,6 +23,7 @@ public class Main1 {
             }
         }
 
+        //test if it is correct
         Iterator iterator = converterContainer.objects();
         while (iterator.hasNext()){
             log(iterator.next().toString());

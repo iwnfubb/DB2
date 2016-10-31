@@ -25,7 +25,7 @@ public class StockCursor extends AbstractCursor<StockEntry> {
 
     protected boolean hasNextObject() {
         try {
-            if(fis.available()>0)
+            if (fis.available() > 0)
                 return true;
         } catch (IOException e) {
             e.printStackTrace();
@@ -53,7 +53,7 @@ public class StockCursor extends AbstractCursor<StockEntry> {
 
             bytes_array = new byte[8];
             fis.read(bytes_array);
-            double kurswert= ByteBuffer.wrap(bytes_array).getDouble();
+            double kurswert = ByteBuffer.wrap(bytes_array).getDouble();
 
             return new StockEntry(id, name, zeitStempel, kurswert);
         } catch (IOException e) {
@@ -62,24 +62,14 @@ public class StockCursor extends AbstractCursor<StockEntry> {
         return null;
     }
 
-    public void close(){
+    public void close() {
         try {
             fis.close();
         } catch (IOException e) {
             log("Error by closing File");
         }
     }
-    /*
-    //test
-    public static void main(String[] arg) {
-        System.out.println("Testing ...");
-        StockCursor stockCursor = new StockCursor("Testdata.bin");
-        while ( stockCursor.hasNextObject()){
-            System.out.println(stockCursor.nextObject());
-        }
-        stockCursor.close();
-    }
-    */
+
     private void log(Object o) {
         System.out.println(o);
     }

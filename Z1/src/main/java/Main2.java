@@ -18,10 +18,12 @@ public class Main2 {
 
         log("Read file: " + file_name);
 
+        //write data to blockfilecontainer with a filter
         while (filter.hasNext()) {
                 converterContainer.insert(filter.next());
         }
 
+        //testis it is correct
         Iterator iterator = converterContainer.objects();
         while (iterator.hasNext()){
             log(iterator.next().toString());
