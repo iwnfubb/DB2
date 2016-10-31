@@ -14,6 +14,7 @@ public class Main1 {
         StockConverter stockConverter = new StockConverter();
         ConverterContainer converterContainer = new ConverterContainer(blockFileContainer, stockConverter);
         StockFilterPredicate stockFilterPredicate = new StockFilterPredicate();
+
         log("Read file: " + file_name);
 
         while (stockCursor.hasNextObject()) {
