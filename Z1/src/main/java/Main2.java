@@ -4,9 +4,7 @@ import xxl.core.cursors.filters.Filter;
 
 import java.util.Iterator;
 
-/**
- * Created by OutOffCoffeeException on 31/10/2016.
- */
+
 public class Main2 {
     public static void main(String[] args) {
         String file_name = "Testdata.bin";
@@ -23,7 +21,7 @@ public class Main2 {
                 converterContainer.insert(filter.next());
         }
 
-        //testis it is correct
+        //test if it is correct
         Iterator iterator = converterContainer.objects();
         while (iterator.hasNext()){
             log(iterator.next().toString());

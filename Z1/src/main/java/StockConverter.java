@@ -8,9 +8,7 @@ import java.io.DataOutput;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 
-/**
- * Created by OutOffCoffeeException on 30/10/2016.
- */
+
 public class StockConverter extends Converter<StockEntry> {
     @Override
     public StockEntry read(DataInput dataInput, StockEntry object)

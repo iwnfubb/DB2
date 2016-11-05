@@ -1,6 +1,4 @@
-/**
- * Created by OutOffCoffeeException on 30/10/2016.
- */
+
 public class StockEntry {
     private int id;
     private double kurswert;

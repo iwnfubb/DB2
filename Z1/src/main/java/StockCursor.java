@@ -7,9 +7,6 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 
 
-/**
- * Created by OutOffCoffeeException on 30/10/2016.
- */
 public class StockCursor extends AbstractCursor<StockEntry> {
 
     FileInputStream fis = null;
